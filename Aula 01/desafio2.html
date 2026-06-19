@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- DEFINIR DESCRIÇÃO DO QUE A PÁGINA VAI FAZER -->
     <meta name="description" content="...">
+
+    <!-- PALAVRAS CHAVES DA DESCRIÇÃO EX: VENDE, CONCORRENTES -->
     <meta name="keywords" content="sites, web">
-    <meta name="author" content="Luana Oliveira">
-    <title>desafio2 - JAVASCRIPT</title>
-    <link rel="icon" type="images/png" href="favicon.jpg">
+
+    <!-- AUTOR -->
+    <meta name="author" content="Nicolas Phelipe, @nicolas_spp, 00nicolas_spp@gmail.com, (11)92746-8709">
+
+    <title>HOME: Página Principal</title>
+
+    <!-- <link rel="icon" type="images/png" href="https://sc.ltwebstatic.com/she_dist/images/touch-icon-ipad-72-452a7213ef.png"> -->
+    <link rel="icon" type="images/png" href="favicon2.png">
+
+
 
 </head>
+
+
 <body>
-    <h1>Integrando os recursos de interatividade do JS</h1>
+    <h1>Integrando os resursos <mark>Documento</mark></h1>
+
     <hr>
+    <p></p>
     <script>
-        window.alert("Seja bem-vindo ao site");
-        let none = window.prompt("QUAL É SEU NOME? ");
-        window.alert(nome);
-        console.log(nome);
-        let resposta = window.confirm("Voce deseja sair da página?");
-        console.log(resposta);
+        
+        window.alert("Seja bem-vindo ao site ");
+        let num1 = window.prompt("Solicite o primeiro número: ");
+        num1 = parseInt(num1);
+
+        let num2 = window.prompt("Solicite o segundo número: ");
+        num2 = parseInt(num2);
+
+        let op = window.prompt("Qual tipo de operação? ")
+
+        num1 = parseInt(num1)
+        num2 =  parseInt(num2)
+        let resultado = 0
+        if (op=="+"){
+            resultado = num1 + num2
+        }else{
+            resultado = num1 - num2
+        }
+
+        
+        document.getElementsByTagName("p")[0].innerText=" O reultado é: "+resultado  
+
+
     </script>
 </body>
+
 </html>

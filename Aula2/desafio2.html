@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Nicolas Phelipe, @nicolas_spp, 00nicolas_spp@gmail.com, (11)92746-8709">
+    <title>EXERCÍCIOS 01 - INTRODUÇÃO AO JAVASCRIPT</title>
+    <link rel="icon" type="images/png" href="favicon.jpg">
+
+
+
+</head>
+
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS) </mark>DO HTML ATRAVÉS DO JAVASCRIPT</h1>
+    <hr>
+
+    <div>
+        <p>Estamos aprendendo JavaScript</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar exercício</p>
+    </div>
+
+
+    <img width="100%" src="img/flor.png" alt="cidade de roma">
+    </div>
+
+    <script>
+        const tags_src = document.getElementsByTagName('img')
+        console.log(tags_src);
+        let tags_src_1 = tags_src[0]
+        console.log(tags_src_1);
+        tags_src_1.src = "img";
+    </script>
+
+
+</body>
+
+
+</html>

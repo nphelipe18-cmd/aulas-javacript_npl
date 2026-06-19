@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Nicolas Phelipe, @nicolas_spp, 00nicolas_spp@gmail.com, (11)92746-8709">
+    <title>EXERCÍCIOS 01 - INTRODUÇÃO AO JAVASCRIPT</title>
+    <link rel="icon" type="images/png" href="favicon.jpg">
+
+
+
+</head>
+
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS) </mark>DO HTML ATRAVÉS DO JAVASCRIPT</h1>
+    <hr>
+
+    <div>
+        <p>Estamos aprendendo JavaScript</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar exercício</p>
+    </div>
+
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+        let tags_p_1 = tags_p[0]
+        console.log(tags_p_1);
+
+        tags_p_1.style.backgroundColor = "cyan";
+        tags_p_1.style.color = "black";
+        tags_p_1.style.textAlign = "center";
+        tags_p_1.style.fontSize = "25pt";
+
+
+        const tags_p2 = document.getElementsByTagName('p')
+        console.log(tags_p2);
+        let tags_p_2 = tags_p2[1]
+        console.log(tags_p2);
+
+        tags_p_2.style.backgroundColor = "red";
+        tags_p_2.style.color = "white";
+        tags_p_2.style.textAlign = "center";
+        tags_p_2.style.fontSize = "20pt";
+
+
+        const tags_p3 = document.getElementsByTagName('p')
+        console.log(tags_p3);
+        let tags_p_3 = tags_p3[2]
+        console.log(tags_p3);
+
+        tags_p_3.style.backgroundColor = "blue";
+        tags_p_3.style.color = "black";
+        tags_p_3.style.textAlign = "center";
+        tags_p_3.style.fontSize = "25pt";
+
+        tags_p_3.innerText = "A TURMA DO DEV É ESPETACULAR DEMAIS! "
+
+
+        
+        document.write('<h2>UAAAU, <mark>JAVASCRIPT É MUITO LEGAL! </mark></h2>')
+
+
+        const div = document.getElementsByTagName('div')
+        console.log(div);
+        let div1 = div[0]
+        console.log(div);
+
+        div1.style.backgroundColor = "pink";
+        div1.style.color = "black";
+        div1.style.border = "5px solid gray";
+
+
+
+        
+        const body = document.getElementsByTagName('body')
+        console.log(body);
+        let body1 = body[0]
+        console.log(body);
+
+        body1.style.backgroundColor = "black";
+        body1.style.color = "white";
+        body1.style.textAlign = "center";
+        body1.style.fontSize = "15pt";
+
+
+
+    </script>
+
+
+</body>
+
+
+</html>
